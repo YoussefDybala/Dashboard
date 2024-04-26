@@ -183,6 +183,7 @@ ul {
 /* Start Dashboard  */
 .dashboard {
   background-color: #ddd;
+  /* display: none; */
 }
 .dashboard h3 {
   font-size: 30px;
@@ -616,7 +617,7 @@ padding-bottom: 10px;
   flex-basis: calc( width / 2);
   border-radius: 8px;
   border: 1px solid black; 
-  width: 320px;
+  width: 279px;
   height: 140px;
   padding-bottom: 15px;
   display: flex;
@@ -811,6 +812,17 @@ padding-bottom: 25px;
   top: 5px;
   height: 1px;
   background-color: #333;
+}
+@media (max-width : 768px) {
+  .latest .latest-con::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    left: 20px;
+    top: 5px;
+    height: 1px;
+    background-color: #333;
+  }
 }
 
 /* //////////////Start Top Search ////////////// */
@@ -1288,6 +1300,405 @@ top: 15px;
   }
   /* <!-- ///////////////////////End Social //////////// --> */
 /* End Dashboard  */
+
+/* /////////////////Start Setting ///////////////// */
+.setting {
+  background-color: #eee;
+  /* display: none; */
+}
+.setting h3 {
+  font-size: 30px;
+  position: relative;
+  padding: 20px;
+}
+.setting h3::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: black;
+  top: 61px;
+  left: 20px;
+}
+.setting h3::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  top: 61px;
+  left: 60px;
+  z-index: 1;
+}
+/* //////////////////Start Site Control //////////////// */
+.site-control {
+  padding: 20px;
+}
+.site-control h4 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.site-control > p {
+  color: gray;
+  margin-bottom: 25px;
+}
+.site-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.site-con h5 {
+font-size: 18px;
+margin-bottom: 15px;
+}
+.site-con p {
+  color: gray;
+  margin-bottom: 25px;
+}
+.open-close input {
+  position: relative;
+  width: 28px;
+  height: 25px;
+  top: 23px;
+}
+.message {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  margin: 25px 0;
+  position: relative;
+}
+.message::placeholder {
+position: absolute;
+left: 10px;
+top: 10px;
+}
+/* //////////////////End Site Control //////////////// */
+/* ////////////////// Start General Info ///////////// */
+.genral {
+  padding: 20px;
+}
+.genral h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.genral p {
+  color: gray;
+  margin-bottom: 20px;
+}
+form {
+display: flex;
+flex-direction: column;
+}
+form input {
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  height: 40px;
+  padding: 5px;
+}
+form input .label {
+  color: gray;
+}
+.email {
+  width: 80%;
+  position: relative;
+}
+.change span {
+  color: white;
+  background-color: #0075ff;
+  padding: 5px;
+  border-radius: 8px;
+  position: relative;
+  left: 50px;
+}
+@media (max-width : 768px) {
+  .change span {
+    left: 0;
+  }
+}
+/* ////////////////////End General Info /////////////// */
+
+/* /////////////////// Start Security ////////////////  */
+.security {
+  padding: 20px;
+}
+.security h4 {
+    font-size: 25px;
+    margin-bottom: 15px
+}
+.security p{
+  color: gray;
+  margin-bottom: 15px;
+}
+.sec-cont {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.sec-con {
+  position: relative;
+}
+.con::after {
+content: '';
+position: absolute;
+width: 95%;
+height: 2px;
+background-color: #eee;
+top: 0;
+left: 15px;
+}
+@media (max-width : 768px) {
+  .con::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 2px;
+    background-color: #eee;
+    top: 0;
+    left: 15px;
+    }
+}
+.sec-cont p {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.sec-cont span {
+ color: gray;
+}
+.sec-but span {
+  color: white;
+  background-color: #0075ff;
+  padding: 5px;
+  border-radius: 8px;
+  position: relative;
+  top: 22px;
+}
+.sec-but input {
+width: 25px;
+height: 25px;
+position: relative;
+top: 8px;
+}
+.sec-but p {
+  
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 8px;
+  position: relative;
+  top: 18px;
+}
+@media (max-width: 768px) {
+  .sec-but span {
+    color: white;
+    background-color: #0075ff;
+    padding: 5px;
+    border-radius: 8px;
+    position: relative;
+    top: 24px;
+    left: 15px;
+  }
+
+}
+
+/* /////////////////// End Security ////////////////  */
+/* <!-- /////////////////// Start Social Info ///////////////// --> */
+.social-info {
+  padding: 20px;
+}
+.social-info h4{
+ font-size: 25px;
+ margin-bottom: 10px;
+}
+.social-info p{
+  color: gray;
+  margin-bottom: 25px;
+}
+.form .icons {
+  display: flex;
+  padding: 5px;
+}
+.form .icons i {
+  font-size: 22px;
+  color: gray;
+  position: relative;
+  background-color: #eee;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 8px;
+}
+@media (max-width : 768px) {
+  .form .icons i {
+    width: 100px;
+  }
+}
+.social-info .form input {
+  margin: 10px 0;
+  width: 550px;
+  height: 40px;
+  border-top-right-radius: 8px;
+  outline: none;
+  border: none;
+  border-left: 1px solid gray;
+  background-color: #eee;
+  padding-left: 5px;
+  transition: 0.3s;
+}
+.social-info .form input:focus  i {
+  color: white;
+}
+.social-info .form input::placeholder {
+  padding-left: 10px;
+}
+/* <!-- /////////////////// End Social Info ///////////////// --> */
+/* <!-- ///////////////// Start Widgets Control /////////////  --> */
+.widgets {
+  padding: 20px;
+}
+.widgets h4 {
+font-size: 25px;
+margin-bottom: 10px;
+}
+.widgets p {
+margin-bottom: 35px;
+color: gray;
+}
+.wid-con {
+  display: flex;
+}
+.wid-con ul li {
+  padding: 10px;
+  font-size: 20px;
+}
+.wid-con ul li input {
+  width: 20px;
+  height: 18px;
+  margin-bottom: 5.5px;
+}
+/* <!-- ///////////////// End Widgets Control /////////////  --> */
+/* <!-- //////////////// Start Backup Manager ///////////// */
+.backup{
+  padding: 20px;
+}
+.backup h4 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.backup h5 {
+  font-weight: normal;
+  color: gray;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.back-cont {
+  display: flex;
+  position: relative;
+  margin-bottom: 35px;
+}
+.back-cont::after {
+content: '';
+position: absolute;
+background-color: #eee;
+top: 140px;
+left: 15px;
+height: 1px;
+width: 95%;
+}
+.back-cont ul li {
+  padding: 10px;
+  font-size: 18px;
+}
+.back-cont .day li {
+  margin-bottom: 1px;
+}
+.back-cont ul li input {
+  width: 18px;
+ height: 18px;
+}
+.back-con{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.back-con div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 25px;
+  width: 185px;
+  height: 70px;
+  border: 1px solid #cfcfcf ;
+  border-radius: 8px;
+}
+.back-con div i {
+  margin-bottom: 5px;
+}
+.back-con div.active {
+  border: 2px solid #0075ff;
+  color: #0075ff;
+}
+@media (max-width: 768px) {
+  .back-con div {
+   position: relative;
+   left: 15%;
+   top: 0;
+  }
+}
+/* //////////////// End Backup Manager ///////////// */
+/* /////////////////End Setting ///////////////// */
+
+/* ///////////////////// Start Profil //////////////////  */
+.profile {
+  background-color: #eee;
+  display: none;
+}
+.profile h3 {
+  font-size: 30px;
+  position: relative;
+  padding: 20px;
+}
+.profile h3::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: black;
+  top: 61px;
+  left: 20px;
+}
+.profile h3::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  top: 61px;
+  left: 60px;
+  z-index: 1;
+}
+/* --Start Main Profail --- */ */
+ .profile  .main-prof .main-con{
+    display: flex;
+  }
+  .profile .main-profile .main-cont {
+    display: flex;
+
+  }
+/* ---End Main Profail --- */
+/* ///////////////////// End Profil //////////////////  */
 
 /* End  Content  */
 
