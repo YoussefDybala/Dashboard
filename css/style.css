@@ -721,7 +721,11 @@ padding-bottom: 15px;
   .news .all-news .news-cont {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
   }
+
   .news .all-news::before  {
     content: '';
     position: absolute;
