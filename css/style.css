@@ -1663,7 +1663,7 @@ width: 95%;
 /* ///////////////////// Start Profil //////////////////  */
 .profile {
   background-color: #eee;
-  display: none;
+
 }
 .profile h3 {
   font-size: 30px;
@@ -1689,18 +1689,703 @@ width: 95%;
   left: 60px;
   z-index: 1;
 }
-/* --Start Main Profail --- */ */
- .profile  .main-prof .main-con{
-    display: flex;
+.boxes .box3{
+  background-color: #ffffff;
+  width: 1258px;
+  height: 458px;
+  border-radius: 8px;
+}
+@media (max-width : 768px) {
+  .boxes .box3 {
+    width: 310px;
+    height: fit-content;
   }
-  .profile .main-profile .main-cont {
+  .Proff{
     display: flex;
-
+    flex-direction: column;
   }
-/* ---End Main Profail --- */
-/* ///////////////////// End Profil //////////////////  */
+  .first-prof {
+    padding: 20px;
+    width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 150px;
+      margin-top: 150px;
+  }
+}
+.Proff {
+  display: flex;
+}
+  .first-prof {
+  padding: 20px;
+  width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    border-right: 2px solid #eee;
+}
+.first-prof img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 15px;
+}
+.first-prof h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.first-prof > p {
+  font-size: 15px;
+  color: gray;
+  margin: 10px 0;
+}
+.first-prof i {
+  color: orange;
+}
+.first-prof span {
+  width: 150px;
+  height: 6px;
+  background-color: #eee;
+  border-radius: 8px;
+  margin: 10px 0;
+  position: relative;
+}
+.first-prof span::after{
+position: absolute;
+content: '';
+top: 0;
+left: 0;
+width: 108px;
+height: 6px;
+background-color: #0075ff;
+border-radius: 8px;
+}
+.second-prof{
+  padding: 20px;
+}
+.second-prof h4 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  color: gray;
+  font-weight: normal;
+}
+.sec-profile {
+  display: flex;
+  position: relative;
+}
+.sec-profile div {
+  color: gray;
+}
+.sec-profile div span{
+  color: rgb(0, 0, 0);
+}
+.sec-profile .p-1{
+margin-right: 25px;
+width: 250px;
+text-align: left;
+padding-bottom: 25px;
+}
+.sec-profile .p-2{
+margin-right: 25px;
+width: 250px;
+text-align: left;
+padding-bottom: 25px;
+}
+.sec-profile .p-3{
+margin-right: 25px;
+width: 250px;
+text-align: left;
+padding-bottom: 25px;
+}
+.sec-prof input {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  bottom: 20px;
+  left: 10px;
+}
+.sec-profile::after {
+content: '';
+position: absolute;
+left: 15px;
+top: 61px;
+width: 95%;
+height: 1px;
+background-color: #eee;
+}
+@media (max-width : 768px) {
+  .sec-prof {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  .sec-profile {
+    display: flex;
+    flex-direction: column;
+    
+  } 
+  .sec-profile .p-1{
+    margin-right: 25px;
+    width: 250px;
+    text-align: center;
+   
+    }
+    .sec-profile .p-2{
+    margin-right: 25px;
+    width: 250px;
+    text-align: center;
+    
+    }
+    .sec-profile .p-3{
+    margin-right: 25px;
+    width: 250px;
+    text-align: center;
+    padding-bottom: 35px;
+    }
+    .second-prof h4 {
+      margin-bottom: 20px;
+    }
+    .sec-prof input {
+      width: 25px;
+      height: 25px;
+      position: relative;
+      bottom: 27px;
+      left: 120px;
+    }
+    .sec-profile::after {
+      content: '';
+      position: absolute;
+      left: 15px;
+      top: 153px;
+      width: 95%;
+      height: 1px;
+      background-color: #eee;
+      }
+}
+/* ///////////// start skills /////////// */
+.boxes .box1{
+  background-color: #ffffff;
+  width: 400px;
+  height: 458px;
+  border-radius: 8px;
+}
+@media (max-width : 768px) {
+  .boxes .box1 {
+    width: 310px;
+    height: fit-content;
+  }
+}
+.skills {
+  padding: 20px;
+}
+.skills h4{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.skills p {
+  color: gray;
+  margin-bottom: 15px;
+}
+.skill-cont {
+  padding-left: 20px;
+  margin-bottom: 33px;
+  position: relative;
+}
+@media (max-width :768px) {
+  .skill-cont {
+    text-align: center;
+  }
+}
+.skill-cont::after{
+content: '';
+position: absolute;
+left: 15px;
+top: 33px;
+height: 1px;
+width: 90%;
+background-color: #eee;
+}
+.skill-cont span {
+  margin-right: 15px;
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 8px;
+}
+/* ///////////// End skills /////////// */
+/* //////////// start Activities ////////////  */
+.boxes .box4{
+  background-color: #ffffff;
+  width: 837px;
+  height: 458px;
+  border-radius: 8px;
+}
+@media (max-width : 768px) {
+  .boxes .box4 {
+    width: 310px;
+    height: fit-content;
+  }
+}
+.Activeities {
+  padding: 20px;
+}
+.Activeities h4{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.Activeities p{
+  color: gray;
+  margin-bottom: 25px;
+}
+.active-cont {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  position: relative;
+}
+.active-cont::after {
+  position: absolute;
+  content: '';
+  width: 98%;
+  height: 1px;
+  background-color: #eee;
+  left: 15px;
+  top: 82px;
+}
+@media (max-width : 768px) {
+  .active-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    position: relative;
+  }
+  .active-cont::after {
+    position: absolute;
+    content: '';
+    width: 98%;
+    height: 1px;
+    background-color: #eee;
+    left: 15px;
+    top: 196px;
+  }
+  .active-cont .a-2 h5 {
+   position: relative;
+    left: -8;
+  }
+}
+.images {
+  display: flex;
+}
+.active-cont .images img {
+  width: 65px;
+  height: 65px;
+}
+.active-cont .a-1 {
+  margin-left: 15px;
+}
+.active-cont .a-1 h5{
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+.active-cont .a-1 h5{
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+.active-cont .a-1 span{
+  color: gray;
+}
+.active-con .a-2 h5 {
+  margin: 10px 0;
+  font-size: 15px;
+}
+.active-con .a-2 span{
+  color: gray;
+  font-size: 18px;
+}
 
-/* End  Content  */
+@media (max-width : 768px) {
+  .active-cont {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .active-cont .images{
+    display: flex;
+    flex-direction: column;
+  }
+  .active-cont .images img {
+    position: relative;
+    left: 40%;
+  }
+}
+.active-con .a-2 h5 {
+  margin-left: 25px;
+}
+ /* //////////// End Activities ////////////  */
+/* ///////////// End Profile //////////  */
 
-/* End Page Content  */
-
+/* ///////////// Start Profile /////////// */
+.Projects {
+  background-color: #ddd;
+  /* display: none; */
+}
+.Projects h3 {
+  font-size: 30px;
+  position: relative;
+  padding: 20px;
+}
+.Projects h3::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: black;
+  top: 61px;
+  left: 20px;
+}
+.Project h3::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  top: 61px;
+  left: 60px;
+  z-index: 1;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.boxes .box5{
+  background-color: #ffffff;
+  width: 619px;
+  height: 300px;
+  border-radius: 8px;
+}
+@media (max-width : 768px) {
+  .boxes .box5 {
+    width: 310px;
+    height: fit-content;
+  }
+}
+.project{
+  padding: 20px;
+}
+.project h4{
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.project p{
+  font-weight: normal;
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 35px;
+}
+.project .images img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+.project .images .img img {
+  margin-left: -15px;
+}
+.project .images {
+  position: relative;
+}
+.project .images::after {
+position: absolute;
+content: '';
+width: 98%;
+height: 1px;
+background-color: #d6d1d1;
+left: 15px;
+top: 70px;
+}
+.title  ul{
+display: flex;
+justify-content: flex-end;
+position: relative;
+}
+.title  ul li{
+background-color: #eee;
+margin-top: 18px;
+padding: 5px;
+margin-left: 8px;
+border-radius: 8px;
+text-align: center;
+}
+@media (max-width : 768px) {
+  .title  ul{
+    display: flex;
+    flex-direction: column;
+    }
+    .title  ul li{
+      background-color: #eee;
+      margin-top: 18px;
+      padding: 5px;
+      border-radius: 8px;
+      text-align: center;
+      width: fit-content;
+      }
+      .project .images::after {
+        position: absolute;
+        content: '';
+        width: 98%;
+        height: 1px;
+        background-color: #d6d1d1;
+        left: 3px;
+        top: 70px;
+        }
+        .project .title ul::after {
+          display: none;
+          }
+        .project .title ul::before {
+          position: absolute;
+          content: '';
+          width: 98%;
+          height: 1px;
+          background-color: #d6d1d1;
+          left: 3px;
+          top: 195px;
+          }
+}
+.project .title ul::after {
+  position: absolute;
+  content: '';
+  width: 98%;
+  height: 1px;
+  background-color: #d6d1d1;
+  left: 15px;
+  top: 60px;
+  }
+  .tall {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
+  .date {
+    position: relative;
+    color: gray;
+    top: -300px;
+    right: -510px;
+  }
+  @media (max-width : 768px) {
+    .tall {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      
+    }
+ 
+    .tall .one {
+      margin-left: 15px;
+      margin-bottom: 23px;
+    }
+    .tall .two {
+      margin-left: 15px;
+      margin-bottom: 23px;
+    }
+    .tall .three {
+      margin-left: 15px;
+      margin-bottom: 23px;
+    }
+    .tall .four {
+      margin-left: 15px;
+      margin-bottom: 23px;
+    }
+    .tall .five {
+      margin-left: 15px;
+      margin-bottom: 23px;
+    }
+    .tall .six {
+      margin-left: 15px;
+      margin-bottom: 23px;
+    }
+    .tall .seven {
+      margin-left: 15px;
+      margin-bottom: 23px;
+    }
+    .tall .eight {
+      margin-left: 15px;
+      margin-bottom: 23px;
+    }
+    .tall .nine {
+      margin-left: 15px;
+      margin-bottom: 23px;
+    }
+  }
+  .tall .one {
+    width: 250px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-top: 8px;
+    position: relative;
+  }
+  .tall .two {
+    width: 250px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-top: 8px;
+    position: relative;
+  }
+  .tall .three {
+    width: 250px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-top: 8px;
+    position: relative;
+  }
+  .tall .four {
+    width: 250px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-top: 8px;
+    position: relative;
+  }
+  .tall .five {
+    width: 250px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-top: 8px;
+    position: relative;
+  }
+  .tall .six {
+    width: 250px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-top: 8px;
+    position: relative;
+  }
+  .tall .seven {
+    width: 250px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-top: 8px;
+    position: relative;
+  }
+  .tall .eight {
+    width: 250px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-top: 8px;
+    position: relative;
+  }
+  .tall .nine {
+    width: 250px;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 8px;
+    margin-top: 8px;
+    position: relative;
+  }
+  .tall .one::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 8px;
+    background-color: red;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+  }
+  .tall .two::after {
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 8px;
+    background-color: #22c55e;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+  }
+  .tall .three::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 8px;
+    background-color: #0075ff;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+  }
+  .tall .four::after {
+    position: absolute;
+    content: '';
+    width: 60%;
+    height: 8px;
+    background-color: #22c55e;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+  }
+  .tall .five::after {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 8px;
+    background-color: #22c55e;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+  }
+  .tall .six::after {
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 8px;
+    background-color: red;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+  }
+  .tall .seven::after {
+    position: absolute;
+    content: '';
+    width: 55%;
+    height: 8px;
+    background-color: #22c55e;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+  }
+  .tall .eight::after {
+    position: absolute;
+    content: '';
+    width: 55%;
+    height: 8px;
+    background-color: #22c55e;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+  }
+  .tall .nine::after {
+    position: absolute;
+    content: '';
+    width: 95%;
+    height: 8px;
+    background-color: #0075ff;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+  }
+/* //////////////// End Profile ///////////// */
