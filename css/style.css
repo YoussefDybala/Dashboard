@@ -1667,7 +1667,7 @@ width: 95%;
 /* ///////////////////// Start Profil //////////////////  */
 .profile {
   background-color: #eee;
-
+/* display: none; */
 }
 .profile h3 {
   font-size: 30px;
@@ -2054,7 +2054,7 @@ background-color: #eee;
   top: 61px;
   left: 20px;
 }
-.Project h3::before {
+.Projects h3::before {
   content: '';
   position: absolute;
   width: 120px;
@@ -2393,3 +2393,373 @@ text-align: center;
     border-radius: 8px;
   }
 /* //////////////// End Profile ///////////// */
+/* /////////////// Start Courses /////////////  */
+.courses {
+  background-color: #ddd;
+  /* display: none; */
+}
+.courses h3 {
+  font-size: 30px;
+  position: relative;
+  padding: 20px;
+}
+.courses h3::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: black;
+  top: 61px;
+  left: 20px;
+}
+.courses h3::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  top: 61px;
+  left: 60px;
+  z-index: 1;
+}
+.course-box {
+  background-color: white;
+  width: 299px;
+  height: 425px;
+  border-radius: 8px;
+}
+.course-box  img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+  left: 15px;
+  top: 15px;
+}
+.course-cont {
+  padding: 20px;
+}
+.course-cont p{
+  line-height: 22px;
+  margin-top: 15px;
+  color: gray;
+}
+.cour-info {
+  position: relative;
+}
+.cour-info span{
+background-color: #0075ff;
+padding: 5px;
+border-radius: 8px;
+color: white;
+  position: relative;
+  left: 35%;
+  top: 10px;
+  z-index: 1;
+}
+.cour-info::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 18px;
+  background-color: #ddd;
+}
+.cour-rat {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  padding: 20px;
+}
+.course-box .cover1 {
+  background-image: url(../images/course-01.jpg);
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+  border-radius: 8px;
+}
+.course-box .cover2 {
+  background-image: url(../images/course-02.jpg);
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+  border-radius: 8px;
+}
+.course-box .cover3 {
+  background-image: url(../images/course-03.jpg);
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+  border-radius: 8px;
+}
+.course-box .cover4 {
+  background-image: url(../images/course-04.jpg);
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+  border-radius: 8px;
+}
+.course-box .cover5 {
+  background-image: url(../images/course-05.jpg);
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+        /* /////////////// End Courses /////////////  */
+
+        /* ////////////////////// Start Friends /////////////////  */
+        .friends {
+          background-color: #ddd;
+          /* display: none; */
+        }
+        .friends h3 {
+          font-size: 30px;
+          position: relative;
+          padding: 20px;
+        }
+        .friends h3::after {
+          content: '';
+          position: absolute;
+          width: 120px;
+          height: 2px;
+          background-color: black;
+          top: 61px;
+          left: 20px;
+        }
+        .friends h3::before {
+          content: '';
+          position: absolute;
+          width: 120px;
+          height: 2px;
+          background-color: rgb(255, 255, 255);
+          top: 61px;
+          left: 60px;
+          z-index: 1;
+        }
+        .fr-box {
+          background-color: white;
+          width: 298px;
+          height: 380px;
+          border-radius: 8px;
+        }
+        .contact{
+          padding: 10px;
+        }
+        .contact i{
+          background-color: #eee;
+          padding: 7px;
+          border-radius: 50%;
+          color: gray;
+          margin-left: 3px;
+          transition: 0.3s;
+        }
+        .contact i:hover{
+          background-color: #0075ff;
+          color: white;
+        }
+        .fr-profile {
+          text-align: center;
+          position: relative;
+        }
+        .fr-profile:after {
+          position: absolute;
+          content: '';
+          width: 90%;
+          height: 2px;
+          background-color: #eee;
+          top: 155px;
+          left: 15px;
+        }
+
+        .fr-profile img{
+          width: 85px;
+          height: 85px;
+          border-radius: 50%;
+          margin-bottom: 8px;
+        }
+        .fr-profile h5{
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+        .fr-profile p{
+          font-size: 15px;
+          color: gray;
+        }
+        .fr-fr {
+          position: relative;
+          padding: 20px;
+        }
+        .fr-fr::after {
+          position: absolute;
+          content: '';
+          width: 90%;
+          height: 2px;
+          background-color: #eee;
+          top: 125px;
+          left: 15px;
+        }
+        .fr-fr div{
+          margin: 10px 0;
+        }
+        .fr-fr div i{
+          margin: 0 5px;
+        }
+        .fr-remove {
+          display: flex;
+          justify-content: space-between;
+            padding: 10px;
+        }
+        .fr-remove .re-1 {
+          color: gray;
+          font-size: 15px;
+        }
+        .re-2 span {
+          background-color: #0075ff;
+          border-radius: 8px;
+          padding: 8px;
+          color: white;
+          font-size: 15px;
+        }
+        .re-2 .remo {
+          background-color: red;
+        }
+        /* ////////////////////// End Friends /////////////////  */
+
+        /* ///////////////////// Start Files ///////////////////  */
+        .files {
+          background-color: #ddd;
+          /* display: none; */
+        }
+        .files h3 {
+          font-size: 30px;
+          position: relative;
+          padding: 20px;
+        }
+        .files h3::after {
+          content: '';
+          position: absolute;
+          width: 120px;
+          height: 2px;
+          background-color: black;
+          top: 61px;
+          left: 20px;
+        }
+        .files h3::before {
+          content: '';
+          position: absolute;
+          width: 120px;
+          height: 2px;
+          background-color: rgb(255, 255, 255);
+          top: 61px;
+          left: 60px;
+          z-index: 1;
+        }
+      .boxes .file-box1 {
+      width: 240px;
+      height: 180px;
+      background-color: white;
+      border-radius: 8px;
+      }
+      .boxes .file-box2 {
+        width: 280px;
+        background-color: white;
+        height: fit-content;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+      }
+      .file-box2 h4 {
+        padding: 20px;
+        font-size: 25px;
+      }
+      .fl-cont {
+        display: flex;
+        justify-content: space-between;
+        width: 230px;
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+      }
+      @media (max-width : 768px) {
+        .fl-cont {
+          width: 280px;
+          display: flex;
+        }
+      }
+      .fl-con {
+        display: flex;
+      }
+      .fl-con .filepdf {
+        background-color: #73a1ba;
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        font-size: 18px;
+        color: #0075ff;
+        margin-right: 5px;
+      }
+      .fl-con .fileword {
+        background-color: rgba(255, 0, 0, 0.477);
+        width: 40px;
+        height: 40px;
+        padding-left: 13px;
+        padding-top: 18px;
+        font-size: 18px;
+        color: red;
+        margin-right: 5px;
+      }
+      .fl-con .fileimg {
+        background-color: #22c55e7a;
+        width: 40px;
+        height: 40px;
+        padding-left: 10px;
+        padding-top: 18px;
+        font-size: 18px;
+        color: #22c55e;
+        margin-right: 5px;
+      }
+      .fl-con .filecsv {
+        background-color: #f59f0b6d;
+        width: 40px;
+        height: 40px;
+        padding-left: 12px;
+        padding-top: 18px;
+        font-size: 18px;
+        color: #f59e0b;
+        margin-right: 5px;
+      }
+      .fl-cont p {
+        color: gray;
+      }
+      .fl-cont .gb {
+        margin-top: 10px;
+      }
+      .file-box2 .upload {
+        background-color: #0075ff;
+        color: white;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 8px;
+      }
+   @media (max-width : 768px) {
+    .boxes .file-box1 {
+      width: 300px;
+      height: fit-content;
+    }
+    .boxes .file-box2 {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: fit-content;
+    }
+   }
+
+        /* /////////////////////////End Files/////////////// */
