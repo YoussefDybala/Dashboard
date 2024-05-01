@@ -91,6 +91,16 @@ ul {
   display: flex;
   padding: 10px;
   margin: 5px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.links li:hover  {
+  background-color: #eee;
+}
+.background {
+  background-color: #eee;
 }
 .links li i {
   margin-right: 15px;
@@ -1308,7 +1318,7 @@ top: 15px;
 /* /////////////////Start Setting ///////////////// */
 .setting {
   background-color: #eee;
-  /* display: none; */
+  display: none;
 }
 .setting h3 {
   font-size: 30px;
@@ -1667,7 +1677,7 @@ width: 95%;
 /* ///////////////////// Start Profil //////////////////  */
 .profile {
   background-color: #eee;
-/* display: none; */
+  display: none;
 }
 .profile h3 {
   font-size: 30px;
@@ -2038,7 +2048,7 @@ background-color: #eee;
 /* ///////////// Start Profile /////////// */
 .Projects {
   background-color: #ddd;
-  /* display: none; */
+  display: none;
 }
 .Projects h3 {
   font-size: 30px;
@@ -2396,7 +2406,7 @@ text-align: center;
 /* /////////////// Start Courses /////////////  */
 .courses {
   background-color: #ddd;
-  /* display: none; */
+  display: none;
 }
 .courses h3 {
   font-size: 30px;
@@ -2428,6 +2438,11 @@ text-align: center;
   height: 425px;
   border-radius: 8px;
 }
+ @media(max-width :768px) {
+  .course-box {
+    width: 310px;
+  }
+ } 
 .course-box  img {
   width: 60px;
   height: 60px;
@@ -2514,7 +2529,7 @@ color: white;
         /* ////////////////////// Start Friends /////////////////  */
         .friends {
           background-color: #ddd;
-          /* display: none; */
+          display: none;
         }
         .friends h3 {
           font-size: 30px;
@@ -2545,6 +2560,11 @@ color: white;
           width: 298px;
           height: 380px;
           border-radius: 8px;
+        }
+        @media (max-width : 768px) {
+          .fr-box {
+            width: 310px;
+          }
         }
         .contact{
           padding: 10px;
@@ -2632,7 +2652,7 @@ color: white;
         /* ///////////////////// Start Files ///////////////////  */
         .files {
           background-color: #ddd;
-          /* display: none; */
+          display: none;
         }
         .files h3 {
           font-size: 30px;
@@ -2658,12 +2678,7 @@ color: white;
           left: 60px;
           z-index: 1;
         }
-      .boxes .file-box1 {
-      width: 240px;
-      height: 180px;
-      background-color: white;
-      border-radius: 8px;
-      }
+ 
       .boxes .file-box2 {
         width: 280px;
         background-color: white;
@@ -2749,17 +2764,260 @@ color: white;
         padding: 10px;
         border-radius: 8px;
       }
-   @media (max-width : 768px) {
-    .boxes .file-box1 {
-      width: 300px;
-      height: fit-content;
-    }
-    .boxes .file-box2 {
+      @media (max-width : 768px) {
+        .boxes .file-box1 {
+          width: 310px;
+          height: fit-content;
+          margin-left: 30px;
+        }
+        .boxes .file-box2 {
+          display: flex;
+          flex-direction: column;
+          width: 310px;
+          height: fit-content;
+        }
+       }
+       .boxes .file-box1 {
+        width: 235px;
+        height: 220px;
+        background-color: white;
+        border-radius: 8px;
+        position: relative;
+        }
+       .file-box1 i {
+        padding: 10px;
+        color: gray;
+       }
+       .file-box1 img {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 35%;
+        top: 34px;
+        transition: 0.2s;
+       }
+       .file-box1:hover img {
+       transform: rotate(10deg);
+       }
+       .fl-pdf {
+        position: absolute;
+        left: 35%;
+        top: 117px;
+        color: gray;
+       }
+       .file-box1 p{
+        position: absolute;
+        left: 6%;
+        top: 69%;
+        color: gray;
+       }
+       .file-box1::after {
+        position: absolute;
+        content: '';
+        width: 90%;
+        height: 2px;
+        background-color: #eee;
+        left: 15px;
+        top: 80%;
+       }
+    .file-box1 .fb1-cont {
       display: flex;
-      flex-direction: column;
-      width: 300px;
-      height: fit-content;
+      justify-content: space-between;
+      padding: 10px;
+      position: relative;
+      top: 145px;
+      color: gray;
     }
-   }
-
         /* /////////////////////////End Files/////////////// */
+
+        /* ////////////////////// Start Plans //////////////  */
+        .plans {
+          background-color: #ddd;
+          display: none;
+        }
+        .plans h3 {
+          font-size: 30px;
+          position: relative;
+          padding: 20px;
+        }
+        .plans h3::after {
+          content: '';
+          position: absolute;
+          width: 120px;
+          height: 2px;
+          background-color: black;
+          top: 61px;
+          left: 20px;
+        }
+        .plans h3::before {
+          content: '';
+          position: absolute;
+          width: 120px;
+          height: 2px;
+          background-color: rgb(255, 255, 255);
+          top: 61px;
+          left: 60px;
+          z-index: 1;
+        }
+          .boxes .plan-box {
+          width: 619px;
+          height: 630px;
+          background-color: white;
+          border-radius: 8px;
+        }
+        .plan-box .free {
+          background-color: #22c55e;
+          padding: 20px;
+          margin: 20px;
+          border: 3px solid white;
+          outline: 3px solid #22c55e;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          height: 150px;
+        }
+        .plan-box .free p{
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+        .plan-box .free div{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .plan-box .free div span{
+            font-weight: normal;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+        .plan-box .basic {
+          background-color: #0075ff;
+          padding: 20px;
+          margin: 20px;
+          border: 3px solid white;
+          outline: 3px solid #0075ff;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          height: 150px;
+        }
+        .plan-box .basic p{
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+        .plan-box .basic div{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .plan-box .basic div span{
+            font-weight: normal;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+        .plan-box .premium {
+          background-color: #f59e0b;
+          padding: 20px;
+          margin: 20px;
+          border: 3px solid white;
+          outline: 3px solid #f59e0b;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          height: 150px;
+        }
+        .plan-box .premium p{
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+        .plan-box .premium div{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .plan-box .premium div span{
+            font-weight: normal;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+        .access {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+        }
+        .access ul li {
+          padding: 11px;
+        }
+        @media (max-width : 768px){
+          .access ul li {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+          .plan-box  .join {
+            margin-bottom: 5px;
+            padding: 15px;
+          }
+          .plan-box  .join2 {
+            margin-bottom: 5px;
+            padding: 15px;
+          }
+          .plan-box  .join3 {
+            margin-bottom: 5px;
+            padding: 15px;
+          }
+        }
+        .access .not li i {
+          padding-right: 15px;
+        }
+        
+        .access .not li .yes {
+          color: #22c55e;
+        }
+        .access .not li i {
+          color: red;
+        }
+        .access .cir-info li i {
+          color: gray;
+        }
+        .plan-box .join {
+          margin-top: -13px;
+          margin-left: 25px;
+          background-color: #22c55e;
+          width: fit-content;
+          padding: 8px;
+          border-radius: 8px;
+          color: white;
+        }
+        .plan-box .join2 {
+          margin-top: -13px;
+          margin-left: 25px;
+          background-color: #0075ff;
+          width: fit-content;
+          padding: 8px;
+          border-radius: 8px;
+          color: white;
+        }
+        .plan-box .join3 {
+          margin-top: -13px;
+          margin-left: 25px;
+          background-color: #f59e0b;
+          width: fit-content;
+          padding: 8px;
+          border-radius: 8px;
+          color: white;
+        }
+        @media (max-width : 768px) {
+          .boxes .plan-box {
+            width: 310px;
+            height: fit-content;
+            background-color: white;
+          }
+        }
+        /* ////////////////////// End Plans //////////////  */

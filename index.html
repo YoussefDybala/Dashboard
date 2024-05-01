@@ -14,35 +14,35 @@
     <div class="links">
         <h3>Dybala</h3>
         <ul>
-            <li>
+            <li id="dash">
                 <i class="fa-regular fa-chart-bar fa-fw"></i>
                 <span>Dashboard</span>
             </li>
-            <li>
+            <li id="set">
                 <i class="fa-solid fa-gear fa-fw"></i> 
                 <span>Setting</span>
-            </li>
-            <li>
+            </li >
+            <li id="prof">
                 <i class="fa-regular fa-user fa-fw"></i>
                 <span>Profile</span>
             </li>
-            <li>
+            <li id="proj">
                 <i class="fa-solid fa-diagram-project fa-fw"></i>
                 <span>Projects</span>
             </li>
-            <li>
+            <li id="cours">
                 <i class="fa-solid fa-graduation-cap fa-fw"></i> 
                 <span>Courses</span>
             </li>
-            <li>
+            <li id="friend">
                 <i class="fa-regular fa-circle-user fa-fw"></i>
                 <span>Friends</span>
                 </li>
-            <li>
+            <li id="file">
                 <i class="fa-regular fa-file fa-fw"></i>
                 <span>Files</span>
                 </li>
-            <li>
+            <li id="plan">
                 <i class="fa-regular fa-credit-card fa-fw"></i>
                 <span>Plans</span>
                 </li>
@@ -655,9 +655,9 @@
                         <h5>Control Backup Time And Location</h5>
                         <div class="back-cont">
                             <ul>
-                                <li><input type="radio" name="" id="" checked></li>
-                                <li><input type="radio" name="" id=""></li>
-                                <li><input type="radio" name="" id=""></li>
+                                <li><input type="radio" name="" id="one" checked ></li>
+                                <li><input type="radio" name="" id="two"></li>
+                                <li><input type="radio" name="" id="three"></li>
                             </ul>
                             <ul class="day">
                                 <li>Daily</li>
@@ -666,15 +666,15 @@
                             </ul>
                         </div>
                         <div class="back-con">
-                            <div class="active">
+                            <div id="megman">
                                 <i class="fa-solid fa-server d-block mb-10"></i>
                                 <p>Megaman</p>
                             </div>
-                            <div>
+                            <div id="zero">
                                 <i class="fa-solid fa-server d-block mb-10"></i>
                                 <p>Zero</p>
                             </div>
-                            <div>
+                            <div id="sigma">
                                 <i class="fa-solid fa-server d-block mb-10"></i>
                                 <p>Sigma</p>
                             </div>
@@ -1663,9 +1663,206 @@
         <div class="files">
             <h3>Files</h3>
             <div class="boxes">
-                    <!-- <div class="file-box1">
-
-                    </div> -->
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/pdf.svg" alt="">
+                        <span class="fl-pdf">my-file.pdf</span>
+                        <p>Dybala</p>
+                        <div class="fb1-cont">
+                            <span>20/06/2020</span>
+                            <span>5.5MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/avi.svg" alt="">
+                        <span class="fl-pdf">my-file.avi</span>
+                        <p>Admin</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>12.5MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/eps.svg" alt="">
+                        <span class="fl-pdf">my-file.eps</span>
+                        <p>Uploader</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>2.7MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/dll.svg" alt="">
+                        <span class="fl-pdf">my-file.dll</span>
+                        <p>Youssef</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>15.1MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/psd.svg" alt="">
+                        <span class="fl-pdf">my-file.psd</span>
+                        <p>Coder</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>2.2MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/png.svg" alt="">
+                        <span class="fl-pdf">my-file.png</span>
+                        <p>Designer</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>1.1MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/dll.svg" alt="">
+                        <span class="fl-pdf">my-file.dll</span>
+                        <p>Coder</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>2.2MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/png.svg" alt="">
+                        <span class="fl-pdf">my-file.png</span>
+                        <p>Designer</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>1.1MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/psd.svg" alt="">
+                        <span class="fl-pdf">my-file.psd</span>
+                        <p>Coder</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>2.2MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/pdf.svg" alt="">
+                        <span class="fl-pdf">my-file.pdf</span>
+                        <p>Dybala</p>
+                        <div class="fb1-cont">
+                            <span>20/06/2020</span>
+                            <span>5.5MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/avi.svg" alt="">
+                        <span class="fl-pdf">my-file.avi</span>
+                        <p>Admin</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>12.5MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/eps.svg" alt="">
+                        <span class="fl-pdf">my-file.eps</span>
+                        <p>Uploader</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>2.7MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/dll.svg" alt="">
+                        <span class="fl-pdf">my-file.dll</span>
+                        <p>Youssef</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>15.1MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/pdf.svg" alt="">
+                        <span class="fl-pdf">my-file.pdf</span>
+                        <p>Dybala</p>
+                        <div class="fb1-cont">
+                            <span>20/06/2020</span>
+                            <span>5.5MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/avi.svg" alt="">
+                        <span class="fl-pdf">my-file.avi</span>
+                        <p>Admin</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>12.5MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/eps.svg" alt="">
+                        <span class="fl-pdf">my-file.eps</span>
+                        <p>Uploader</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>2.7MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/dll.svg" alt="">
+                        <span class="fl-pdf">my-file.dll</span>
+                        <p>Youssef</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>15.1MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/dll.svg" alt="">
+                        <span class="fl-pdf">my-file.dll</span>
+                        <p>Coder</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>2.2MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/png.svg" alt="">
+                        <span class="fl-pdf">my-file.png</span>
+                        <p>Designer</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>1.1MB</span>
+                        </div>
+                    </div>
+                    <div class="file-box1">
+                        <i class="fa-solid fa-download c-grey p-absolute"></i>
+                        <img src="images/dll.svg" alt="">
+                        <span class="fl-pdf">my-file.dll</span>
+                        <p>Coder</p>
+                        <div class="fb1-cont">
+                            <span>16/5/2021</span>
+                            <span>2.2MB</span>
+                        </div>
+                    </div>
                     <div class="file-box2">
                         <h4>Files Statistics</h4>
                         <div class="fl-cont">
@@ -1710,11 +1907,112 @@
                         </div>
                         <span class="upload"><i class="fa-solid fa-angles-up mr-10"></i>   Upload</span>
                     </div>
+                    
+                </div>
+            </div>
+            <!-- /////////////////////////End Files/////////////// -->
+            <!-- ///////////////////////////////// Start Plans ///////////////// -->
+            <div class="plans">
+                <h3>Plans</h3>
+                <div class="boxes">
+                    <div class="plan-box">
+                        <div class="free">
+                            <p>Free</p>
+                            <div><span>$</span> 0.00</div>
+                        </div>
+                        <div class="access">
+                            <ul class="not">
+                                <li><i class="fa-solid fa-check fa-fw yes"></i>Access All Text Lessons</li>
+                                <li><i class="fa-solid fa-check fa-fw yes"></i>Access All Videos Lessons</li>
+                                <li><i class="fa-solid fa-check fa-fw yes"></i>Appear On Leaderboard</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Browse Content Without Ads</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Access All Assignments</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Get Daily Prizes</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Earn Certificate</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>1 GB Space For Hosting Files</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Access Badge System</li>
+                            </ul>
+                            <ul class="cir-info">
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                            </ul>
+                        </div>
+                        <div class="join"> <span>Join</span></div>
+                    </div>
+                    <div class="plan-box">
+                        <div class="basic">
+                            <p>Basic</p>
+                            <div><span>$</span> 7.99</div>
+                        </div>
+                        <div class="access">
+                            <ul class="not">
+                                <li><i class="fa-solid fa-check fa-fw yes"></i>Access All Text Lessons</li>
+                                <li><i class="fa-solid fa-check fa-fw yes"></i>Access All Videos Lessons</li>
+                                <li><i class="fa-solid fa-check fa-fw yes"></i>Appear On Leaderboard</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Browse Content Without Ads</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Access All Assignments</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Get Daily Prizes</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Earn Certificate</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>1 GB Space For Hosting Files</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Access Badge System</li>
+                            </ul>
+                            <ul class="cir-info">
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                            </ul>
+                        </div>
+                        <div class="join2"> <span>Join</span></div>
+                    </div>
+                    <div class="plan-box">
+                        <div class="premium">
+                            <p>Premium</p>
+                            <div><span>$</span> 19.99</div>
+                        </div>
+                        <div class="access">
+                            <ul class="not">
+                                <li><i class="fa-solid fa-check fa-fw yes"></i>Access All Text Lessons</li>
+                                <li><i class="fa-solid fa-check fa-fw yes"></i>Access All Videos Lessons</li>
+                                <li><i class="fa-solid fa-check fa-fw yes"></i>Appear On Leaderboard</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Browse Content Without Ads</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Access All Assignments</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Get Daily Prizes</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Earn Certificate</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>1 GB Space For Hosting Files</li>
+                                <li><i class="fa-solid fa-xmark fa-fw"></i>Access Badge System</li>
+                            </ul>
+                            <ul class="cir-info">
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                                <li><i class="fa-solid fa-circle-info help"></i></li>
+                            </ul>
+                        </div>
+                        <div class="join3"> <span>Join</span></div>
                     </div>
                 </div>
             </div>
+            <!-- ////////////////// Start Plans //////////////////  -->
+            </div>
         </div>
-        <!-- /////////////////////////End Files/////////////// -->
     </div>
 </div>
 </body>
