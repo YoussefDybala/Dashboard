@@ -193,7 +193,10 @@ ul {
 /* Start Dashboard  */
 .dashboard {
   background-color: #ddd;
-  /* display: none; */
+  display: none;
+}
+.Opeen {
+  display: block;
 }
 .dashboard h3 {
   font-size: 30px;
@@ -1675,7 +1678,7 @@ width: 95%;
 /* /////////////////End Setting ///////////////// */
 
 /* ///////////////////// Start Profil //////////////////  */
-.profile {
+.profile{
   background-color: #eee;
   display: none;
 }
@@ -2083,7 +2086,7 @@ background-color: #eee;
 .boxes .box5{
   background-color: #ffffff;
   width: 619px;
-  height: 300px;
+  height: 340px;
   border-radius: 8px;
 }
 @media (max-width : 768px) {
@@ -2105,7 +2108,12 @@ background-color: #eee;
   font-size: 15px;
   color: gray;
   margin-bottom: 35px;
+  
 }
+@media (max-width : 768px) {
+
+}
+
 .project .images img{
   width: 40px;
   height: 40px;
@@ -2141,6 +2149,10 @@ border-radius: 8px;
 text-align: center;
 }
 @media (max-width : 768px) {
+  .project .salaryy {
+    position: relative;
+    top: -25px;
+  }
   .title  ul{
     display: flex;
     flex-direction: column;
@@ -2174,6 +2186,10 @@ text-align: center;
           left: 3px;
           top: 195px;
           }
+}
+.project .salaryy {
+  position: relative;
+  top: 0;
 }
 .project .title ul::after {
   position: absolute;
@@ -2245,7 +2261,7 @@ text-align: center;
     height: 8px;
     background-color: #eee;
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 5px;
     position: relative;
   }
   .tall .two {
@@ -2253,7 +2269,7 @@ text-align: center;
     height: 8px;
     background-color: #eee;
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 5px;
     position: relative;
   }
   .tall .three {
@@ -2261,7 +2277,7 @@ text-align: center;
     height: 8px;
     background-color: #eee;
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 5px;
     position: relative;
   }
   .tall .four {
@@ -2269,7 +2285,7 @@ text-align: center;
     height: 8px;
     background-color: #eee;
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 5px;
     position: relative;
   }
   .tall .five {
@@ -2277,7 +2293,7 @@ text-align: center;
     height: 8px;
     background-color: #eee;
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 5px;
     position: relative;
   }
   .tall .six {
@@ -2285,7 +2301,7 @@ text-align: center;
     height: 8px;
     background-color: #eee;
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 5px;
     position: relative;
   }
   .tall .seven {
@@ -2293,7 +2309,7 @@ text-align: center;
     height: 8px;
     background-color: #eee;
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 5px;
     position: relative;
   }
   .tall .eight {
@@ -2301,7 +2317,7 @@ text-align: center;
     height: 8px;
     background-color: #eee;
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 5px;
     position: relative;
   }
   .tall .nine {
@@ -2309,7 +2325,7 @@ text-align: center;
     height: 8px;
     background-color: #eee;
     border-radius: 8px;
-    margin-top: 8px;
+    margin-top: 5px;
     position: relative;
   }
   .tall .one::after {
