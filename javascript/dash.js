@@ -1,6 +1,16 @@
 
 let switchLinks = document.querySelectorAll(".switch-links li")
 let AllPages = document.querySelectorAll(".all-pages  .Pag")
+for (let i = 0 ; i < switchLinks.length ; i++) {
+    switchLinks[0].setAttribute("data-work" , ".dash")
+    switchLinks[1].setAttribute("data-work" , ".set")
+    switchLinks[2].setAttribute("data-work" , ".profe")
+    switchLinks[3].setAttribute("data-work" , ".proj")
+    switchLinks[4].setAttribute("data-work" , ".cours")
+    switchLinks[5].setAttribute("data-work" , ".freind")
+    switchLinks[6].setAttribute("data-work" , ".file")
+    switchLinks[7].setAttribute("data-work" , ".plan")
+}
 switchLinks.forEach((ele) => {
     ele.onclick = function () {
         switchLinks.forEach((ele) => {
@@ -28,7 +38,18 @@ backUp.forEach((ele) => {
             ele.classList.remove("active")
         })
         this.classList.add("active")
+        
     }
 })
 
-
+let started = document.querySelector(".started")
+function loaded() {
+    document.body.onload = function () {
+        started.style.display = "block"
+    }
+    setTimeout(() => {
+        started.classList.add("deleteStarted")
+    }, 1000);
+}
+// 
+loaded()
