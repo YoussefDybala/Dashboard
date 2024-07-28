@@ -49,7 +49,12 @@ function loaded() {
     }
     setTimeout(() => {
         started.classList.add("deleteStarted")
+
     }, 1000);
+    setTimeout(() => {
+        started.style.display = "none"
+
+    }, 2000);
 }
 // 
 loaded()
