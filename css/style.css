@@ -22,7 +22,9 @@ ul {
   a {
     text-decoration: none;
   }
-  
+    .slide {
+    animation: slide 1.5s ease-in-out;
+  }
   .containar {
     padding-left: 15px;
     padding-right: 15px;
@@ -3091,3 +3093,13 @@ color: white;
           }
         }
         /* ////////////////////// End Plans //////////////  */
+        @keyframes slide {
+          from {
+            transform: translateY(200px);
+            opacity: 0.3;
+          }
+          to {
+            transform: translateY(0);
+          opacity: 1;
+          }
+        }
